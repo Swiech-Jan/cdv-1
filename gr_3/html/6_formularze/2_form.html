@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formularz 2</title>
+  </head>
+  <body>
+    <!-- novalidate -->
+    <form action="#" method="post">
+      <input type="login" name="login" placeholder="Login" autofocus autocomplete="off" required><br><br>
+      <input type="password" name="pass" placeholder="Hasło" required><br><br>
+      <input type="number" name="liczba1" step="10"><br><br>
+      <input type="number" name="liczba2" step="0.1"><br><br>
+
+      Daty:<br><br>
+      <input type="date" name="date1"><br><br>
+      <input type="time" name="date2"><br><br>
+      <input type="datetime-local" name="date3"><br><br>
+      <input type="week" name="date4"><br><br>
+      <input type="month" name="date5"><br><br>
+
+      Telefon:<br><br>
+      <input type="tel" name="telefon"><br><br>
+
+      Kolor:
+      <input type="color" name="kolor"><br><br>
+
+      Zakres:
+      <input type="range" name="zakres" min="0" max="255"><br><br>
+
+      Lista:<br><br>
+      <label>Dzień tygodnia</label>
+      <input type="text" name="dzien" list="tydzien"><br><br>
+      <datalist id="tydzien">
+        <option value="Poniedziałek">
+        <option value="Wtorek">
+        <option value="Środa">
+        <option value="Czwartek">
+        <option value="Piątek">
+        <option value="Sobota">
+        <option value="Niedziela">
+      </datalist>
+
+      Wyrażenia regularne:<br><br>
+      Pesel:
+      <input type="text" name="pesel" pattern="[0-9]{11}" required><br><br>
+
+      Kod pocztowy:
+      <input type="text" name="kod" pattern="\d{2}[- ]?\d{3}" placeholder="00-000" required><br><br>
+
+      Adres IP:<br><br>
+      <!-- 192.168.100.1 -->
+
+      Adres MAC:<br><br>
+      <!-- 11AADD1234aa 11:AA:DD:12:34:aa-->
+
+      <input type="submit" name="przycisk" value="Wyślij">
+    </form>
+  </body>
+</html>

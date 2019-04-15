@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tabele</title>
+    <link rel="stylesheet" href="./style/5_tabele.css">
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+    </table><hr>
+
+    <!-- table>.row*3>.col*5 -->
+    <table>
+      <tr class="row">
+        <td class="col">komórka 1</td>
+        <td class="col">komórka 2</td>
+        <td class="col">komórka 3</td>
+        <td class="col">komórka 4</td>
+        <td class="col">komórka 5</td>
+      </tr>
+      <tr class="row">
+        <td class="col">komórka 6</td>
+        <td class="col">komórka 7</td>
+        <td class="col">komórka 8</td>
+        <td class="col">komórka 9</td>
+        <td class="col">komórka 10</td>
+      </tr>
+      <tr class="row">
+        <td class="col">komórka 11</td>
+        <td class="col">komórka 12</td>
+        <td class="col">komórka 13</td>
+        <td class="col">komórka 14</td>
+        <td class="col">komórka 15</td>
+      </tr>
+    </table><hr>
+
+    <!-- table>.wiersz*2>.kolumna*2 -->
+    <table>
+      <tr class="wiersz">
+        <td class="kolumna"><img src="./img/flaga_Polska.png" alt=""></td>
+        <td class="kolumna"><img src="./img/flaga_Ukraina.png" alt=""></td>
+      </tr>
+      <tr class="wiersz">
+        <td class="kolumna"><img src="./img/flaga_Ukraina.png" alt=""></td>
+        <td class="kolumna"><img src="./img/flaga_Polska.png" alt=""></td>
+      </tr>
+    </table><hr>
+
+    <!-- table>.row*3>.col*4 -->
+    <table id="tabela1">
+      <tr class="row">
+        <th class="col"></th>
+        <th class="col">Imię</th>
+        <th class="col">Nazwisko</th>
+        <th class="col">Miasto</th>
+      </tr>
+      <tr class="row">
+        <th class="col">Osoba 1</th>
+        <td class="col">Julia</td>
+        <td class="col">Nowak</td>
+        <td class="col">Poznań</td>
+      </tr>
+      <tr class="row">
+        <th class="col">Osoba 2</th>
+        <td class="col">Tomasz</td>
+        <td class="col">Kowalski</td>
+        <td class="col">Gniezno</td>
+      </tr>
+    </table><hr>
+
+    <!-- table>.row*4>.col*4 -->
+    <table>
+      <tr class="row">
+        <td class="polaczone" colspan="4">1</td>
+      </tr>
+      <tr class="row">
+        <td class="polaczone" colspan="2">2</td>
+        <td class="polaczone" colspan="2">3</td>
+      </tr>
+      <tr class="row">
+        <td class="polaczone1" rowspan="2">4</td>
+        <td class="col">5</td>
+        <td class="col">6</td>
+        <td class="col">7</td>
+      </tr>
+      <tr class="row">
+        <td class="polaczone" colspan="3">8</td>
+      </tr>
+    </table>
+  </body>
+</html>
